@@ -1,0 +1,43 @@
+<style>  
+table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}  
+table#alter tr:nth-child(even) {  
+    background-color: #eee;  
+}  
+table#alter tr:nth-child(odd) {  
+    background-color: #fff;  
+}  
+table#alter th {  
+    color: white;  
+    background-color: gray;  
+}  
+</style>  
+<table border="1" cellspacing="10"   bgcolor="powderblue" style="color: white">
+		<tr><th colspan="4">Country Details</th></tr>
+		<th>Country Code</th>
+		<th>Country Name</th>
+		<th>Population</th>
+		<th>Images</th>
+		<tr>
+			<td align="center">1001</td>
+			<td>India</td>
+			<td>130 Cr.</td>
+			<td><img src="MyImages/ExhibitionImg.jpg" height="20" width="20"></td>
+		</tr>	
+		<tr>
+			<td align="center">1002</td>
+			<td>USA</td>
+			<td>13 Cr.</td>
+			<td><img src="MyImages/ExhibitionImg1.jpg" height="20" width="20"></td>
+		</tr>	
+		<tr>
+			<td align="center">1003</td>
+			<td>UK</td>
+			<td>23 Cr.</td>
+			<td><img src="MyImages/ExhibitionImg2.jpg" height="20" width="20"></td>
+		</tr>	

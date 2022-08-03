@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Form</title>
+</head>
+<body>
+
+
+<form>
+	<table>
+		<tr>
+			<td>UserName </td>
+			<td><input type="text" name="txt1" id="txt1" placeholder="Enter UserName" /></td>
+		</tr>
+		<tr>
+			<td>Password </td>
+			<td><input type="password" name="txt2" id="txt2" /></td>
+		</tr>
+		
+		<tr >
+			<td >Gender</td>
+			<td><input type="radio" name="r1" value="Male">Male <br/>
+				<input type="radio" name="r1" value="Female">Female<br/>
+				<input type="radio" name="r1" value="Others">Others
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=c1 > Skills </label></td>
+			<td><input type="checkbox" name="c1" value="Web">Web Design <br/>
+				<input type="checkbox" name="c2" value="Mobile">Mobile Apps<br/>
+				<input type="checkbox" name="c3" value="Data">Data Handling
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=s1 > City</label></td>
+			<td><select name=s1>
+				<option value="0">Select City</option>
+				<option value="S">Surat</option>
+				<option value="D">Delhi</option>
+				<option value="P">Pune</option>
+				<option value="B">Baroda</option>
+			</select>
+			</td>
+		</tr>
+
+		<tr >
+			<td ><label for=s1 > City</label></td>
+			<td><select name=s1 size=3 multiple="">
+				<option value="0">Select City</option>
+				<option value="S">Surat</option>
+				<option value="D">Delhi</option>
+				<option value="P">Pune</option>
+				<option value="B">Baroda</option>
+			</select>
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=p1 > Profile</label></td>
+			<td>
+				<textarea rows="5" cols="40" name="p1"></textarea>
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=img1 > Image</label></td>
+			<td>
+				<input type="file" name="img1">
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=age > Age</label></td>
+			<td>
+				<input type="number" name="age" min=10 max=20>
+			</td>
+		</tr>
+		<tr >
+			<td ><label for=email > Email</label></td>
+			<td>
+				<input type="email" name="uemail" >
+			</td>
+		</tr>
+		<tr >
+			<td ><input type="button" name="btn1" value="Submit">
+				<br/>
+				<input type="submit" name="btn2" value="Submit">
+				<br/>
+				<input type="reset" name="btn3" value="Reset">
+			</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>

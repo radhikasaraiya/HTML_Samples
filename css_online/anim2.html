@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<style type="text/css">
+.element {
+  height: 30px;
+  width: 80px;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  background-color: orange;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+ /* animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;*/
+}
+
+@keyframes stretch {
+  20% {
+    //transform: scale(.5);
+    background-color: red;
+    //border-radius: 50%;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    //transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover
+{
+  background-color: cyan;
+}
+
+</style>
+</head>
+<body>
+
+<!-- <div class="element">Hello</div>
+
+
+<h1 class="element">Good Day</h1> -->
+<input type=button value=Submit class="element" />
+
+
+<input type=button value=Submit2  />
+
+</body>
+</html>

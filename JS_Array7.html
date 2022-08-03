@@ -1,0 +1,19 @@
+<script>  
+//var arr=[34,345,23,22];
+//var arr=new Array(233,434,45,2,4);
+
+var arr = { "charvee" : 18, "Jainam" : 26, "Prexa": 22 };  
+
+for(var key in arr)
+{
+  var value = arr[key];
+  document.write(key + " = " + value + '<br>');
+}
+
+var itr=arr.keys();  
+document.write(itr+"<br>");  
+//Looping through each key.  
+for (var key of itr) {  
+  document.write(key+"<br>");  
+}  
+</script>

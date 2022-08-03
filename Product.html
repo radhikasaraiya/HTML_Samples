@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product table</title>
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td>Product Code</td>
+			<td><Input type=text name=pcode /></td>
+		</tr>
+
+		<tr>
+			<td>Product Name</td>
+			<td><Input type=text name=pname /></td>
+		</tr>
+
+		<tr>
+			<td>Product Price</td>
+			<td><Input type=number name=pcode /></td>
+		</tr>
+
+		<tr>
+			<td>Product Brand</td>
+			<td>
+				<select name="brand">
+					<option>--Select--</option>
+					<option>Lenovo</option>
+					<option>Sony</option>
+					<option>Asus</option>
+					<option>HP</option>
+					<option>Dell</option>
+				</select>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td>Taxation</td>
+			<td>
+				<input type="radio" name="r1"> All Taxes <br/>
+				<input type="radio" name="r1"> gst <br/>
+				<input type="radio" name="r1"> cst <br/>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Features</td>
+			<td>
+				<input type="checkbox" name="c1">Bluetooth <br/>
+				<input type="checkbox" name="c2"> Wifi <br/>
+				<input type="checkbox" name="c3"> USB <br/>
+				<input type="checkbox" name="c4"> LAN <br/>
+				
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>Description</td>
+			<td>
+				<textarea rows=8 cols=50 name="Description"> </textarea>
+				
+			</td>
+		</tr>
+
+		<tr>
+			<td>Photo</td>
+			<td>
+				<input type="file" name="f1" >
+				
+			</td>
+		</tr>
+		
+			<tr>
+
+			<td colspan="2">
+				<input type="submit" name="s1" value="submit" />				
+			</td>
+		</tr>
+
+
+	</table>
+</form>
+</body>
+</html>

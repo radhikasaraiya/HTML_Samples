@@ -1,0 +1,33 @@
+<script>
+function addCombo() {
+	
+	var textb = document.getElementById("txtCombo");
+
+	var combo = document.getElementById("combo");
+	
+	var option = document.createElement("option");
+	option.text = textb.value;
+	option.value = textb.value;
+	try {
+		combo.add(option, null); //Standard 
+	}catch(error) {
+		combo.add(option); // IE only
+	}
+	textb.value = "";
+}
+</script>
+<HTML>
+	<HEAD>
+	<BODY >
+
+		<fieldset>
+			 
+			Add to Combo: <input type="text" name="txtCombo" id="txtCombo"/>
+			<input type="button" value="Add" onclick="addCombo()">
+			<br/>
+			Combobox: <select name="combo" id="combo">
+				<option>--select--</option>
+			</select>
+		</fieldset>
+	</BODY>
+</HTML>

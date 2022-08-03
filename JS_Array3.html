@@ -1,0 +1,20 @@
+<script>  
+var sum = 0;  
+var arr = [10,18,12,20];  
+var tot=0;
+
+for (i=0;i<arr.length;i++)
+{
+tot+=arr[i];
+}
+
+document.writeln("Total is "+ tot+"<br>");  
+
+
+arr.forEach(function myFunction(element) {  
+    sum= sum+element;  
+  document.writeln(element+"<br>");  
+});
+
+  document.writeln(sum+"<br>");  
+</script> 

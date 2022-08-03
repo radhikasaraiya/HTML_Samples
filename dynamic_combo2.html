@@ -1,0 +1,97 @@
+<script>
+
+	var gcity= ["Surat","Vapi","Rajkot"];
+	var mcity= ["Pune","Nasik","Mumbai"];
+	var rcity= ["Jaipur","Udaipur","Kota"];
+
+
+
+function fillcity() {
+	
+	var state = document.getElementById("cmbstate").value;
+	alert(state);
+	
+	var combo = document.getElementById("cmbcity");
+	
+	combo.options.length = 0;
+
+	if (state=="Gujarat")
+	{
+	
+	gcity.forEach(function myFunction(element) {  
+
+    var option = document.createElement("option");
+    option.text = element;
+	option.value = element;
+
+	try {
+		combo.add(option, null); //Standard 
+	}catch(error) {
+		combo.add(option); // IE only
+	}
+
+	});	
+	}
+	else if (state=="Maharashtra")
+	{
+	
+	mcity.forEach(function myFunction(element) {  
+
+	var option = document.createElement("option");
+	
+    option.text = element;
+	option.value = element;
+	try {
+		combo.add(option, null); //Standard 
+	}catch(error) {
+		combo.add(option); // IE only
+	}
+
+		});	
+
+	}
+
+	else if (state=="Rajasthan")
+	{
+	
+	rcity.forEach(function myFunction(element) {
+	var option = document.createElement("option");
+	
+    option.text = element;
+	option.value = element;
+	try {
+		combo.add(option, null); //Standard 
+	}catch(error) {
+		combo.add(option); // IE only
+	}
+
+		});	
+
+	}
+	
+	
+	 
+}
+</script>
+<HTML>
+	<HEAD>
+	<BODY >
+
+		<!-- <fieldset> -->
+			 
+ 
+			State  <select name="cmbstate" id="cmbstate" onchange="fillcity()">
+				<option>--Select--</option>
+				<option value="Gujarat">Gujarat</option>
+				<option value="Maharashtra">Maharashtra</option>
+				<option value="Rajasthan">Rajasthan</option>
+				
+			</select>
+				<br/>
+			City  <select name="cmbcity" id="cmbcity">
+				<option>--Select--</option>
+			</select>
+
+		<!-- </fieldset> -->
+	</BODY>
+</HTML>
